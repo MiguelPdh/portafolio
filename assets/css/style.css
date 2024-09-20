@@ -1,0 +1,199 @@
+body{
+  background-color: black;
+  color: white;}
+
+.logonav{
+  width: 300px;}
+
+.selfie{
+  width: 300px;
+  height: 400px;
+  border-radius: 50%;}
+
+.selfie2{
+  justify-content: left;
+  display: flex;}
+
+.descripcion{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;}
+
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(../img/bg-hero2.0.jpg);
+  background-size: cover;
+  background-position: center;}
+
+.wrap-texto{
+  color: white;
+  text-align: center;
+  width: 50%;}
+
+.container{
+  position: relative;
+  width: 1000px;
+  background: rgba(0, 0, 0, .2);
+  padding: 0 20px;}
+
+.container .skill{
+  margin: 20px 0;}
+
+.container .skill p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;}
+
+.container .skill .progress{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #999;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;}
+
+  .container .skill .progress{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #999;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;}
+
+.container .skill .progress2{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #999;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;}
+
+.container .skill .progress3{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #999;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;}
+
+.container .skill .progress4{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #999;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;}
+
+.container .skill .progress5{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #999;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 5px 0;}
+
+.container .skill .progress::before{
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: #0280fe;}
+
+.container .skill .progress2::before{
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: #0280fe;}
+
+.container .skill .progress3::before{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #0280fe;}
+
+.container .skill .progress4::before{
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: #0280fe;}
+
+.container .skill .progress5::before{
+  content: '';
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: #0280fe;}
+
+h2{
+  text-align: center;}
+
+.sobremi{
+  text-align: left;
+  font-size: large;}
+
+h5{text-align: center;}
+
+.footer{
+  text-align: center;
+  background-color: gray;}
+
+
+.textoanimado{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 8px;}
+
+.textoanimado span{
+  position: relative;}
+
+.textoanimado span::before{
+  content: 'Miguel Pino';
+  color: white;
+  animation: words 20s infinite;}
+
+.textoanimado span::after{
+  content: '';
+  background-color: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid white;
+  right: -8px;
+  animation: cursor .6s infinite, typing 20s steps(14) infinite;}
+
+@keyframes cursor{
+  to {
+    border-left: 2px solid #2f3542 ;}}
+
+@keyframes words {
+  0%, 20% {content: 'Tecnico en informatica';
+}
+  21%, 40% {content: 'Autodidacta';
+  }
+  41%, 60% {content: 'Administrador de sistemas';
+  }
+  61%, 80% {content: 'Jefe de IT';
+  }
+  81%, 100% {content: 'Fullstack Javascript Developer en formación';
+  }
+  }
+
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;}
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 8px);
+  }}
